@@ -1,0 +1,22 @@
+
+serverName: 10.255.209.167:9876
+
+server:
+  applicationConnectors:
+    - type: http
+      port: 80
+  adminConnectors:
+    - type: http
+      port: 81
+
+# Logging settings.
+logging:
+
+  # The default level of all loggers. Can be OFF, ERROR, WARN, INFO, DEBUG, TRACE, or ALL.
+  level: ERROR
+  appenders:
+    - type: file
+      currentLogFilename: ./log/info.log
+      archivedLogFilenamePattern: ./log/info-%d{yyyy-MM-dd}.log.gz
+      archivedFileCount: 7
+      timeZone: PRC
