@@ -52,7 +52,7 @@ public class MessageResource {
             return Response.status(Response.Status.BAD_REQUEST).build();
         }
 
-        // 请求超时，408
+        // request out time, response 408 error.
         if (!this.isValidTime(sign[2])){
             return Response.status(408).build();
         }
@@ -89,7 +89,7 @@ public class MessageResource {
                              @HeaderParam("signature") String signature,
                              @HeaderParam("consumerid") String consumerId,
                              @HeaderParam("seriesid") String seriesId) {
-        // 采用pull的方式，将偏移量保存到远程.
+        // use pull method, and save offset to remove server.
         DefaultMQPullConsumer consumer = new DefaultMQPullConsumer(consumerId);
         consumer.setInstanceName(sourceId);
         String[] sign = signature.split("-");
@@ -97,17 +97,16 @@ public class MessageResource {
         Set<MessageQueue> mqs;
         List<consumerRequest> messages = new ArrayList<consumerRequest>();
 
-        // sign 格式不正确，则返回404
+        // the sign style error, return 404
         if (sign.length != 3){
             return Response.status(Response.Status.BAD_REQUEST).build();
         }
 
-        // 请求超时，408
+        // request out time, response 408 error.
         if (!this.isValidTime(sign[2])){
             return Response.status(408).build();
         }
 
-        // 设置nameServer
         consumer.setNamesrvAddr(this.serverName);
 
         try {
@@ -116,7 +115,7 @@ public class MessageResource {
             try {
                 mqs = consumer.fetchSubscribeMessageQueues(sign[0]);
             }catch (MQClientException e){
-                // 若无broker存在topic，则认为topic不存在
+                // broker not exist, and maybe topic not exist.
                 return Response.status(Response.Status.BAD_REQUEST).entity(
                         new doFailed("TOPIC_NOT_EXIST", "topic not exist")
                 ).build();
@@ -124,7 +123,6 @@ public class MessageResource {
 
             OffsetStore offsetStore = consumer.getDefaultMQPullConsumerImpl().getOffsetStore();
 
-            // 查询所有broker的队列.(不同key 可能来源自不同broker)
             QUERY_MQ: for (MessageQueue mq : mqs){
                 SINGLE_MQ: while (true) {
                     try {
@@ -164,7 +162,7 @@ public class MessageResource {
         return Response.ok(messages,MediaType.APPLICATION_JSON).build();
     }
 
-    // 检查是否时间小于15s
+    // check time
     private boolean isValidTime(String time){
         long currentTime = System.currentTimeMillis();
         long clientRequestTime = Long.parseLong(time);

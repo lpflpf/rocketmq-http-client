@@ -2,9 +2,6 @@ package com.rockethttpclient.api;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-/**
- * Created by lipengfeijs on 2016/12/16.
- */
 public class doFailed {
     private String code;
     private String info;

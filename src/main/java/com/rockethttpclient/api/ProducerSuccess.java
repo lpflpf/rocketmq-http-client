@@ -2,9 +2,6 @@ package com.rockethttpclient.api;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-/**
- * Created by lipengfeijs on 2016/12/15.
- */
 public class ProducerSuccess {
     @JsonProperty
     public String getMsgId() {
