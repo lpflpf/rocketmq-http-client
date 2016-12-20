@@ -1,7 +1,6 @@
 # rocketmqhttpclient
 **a HTTP client for [rocketMQ](https://github.com/apache/incubator-rocketmq "RocketMQ is a low latency, reliable, scalable, easy to use message oriented middleware born from alibaba massive messaging business.").**
  
- ------
 ## INSTALL
 
   - download release package.
