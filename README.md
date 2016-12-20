@@ -1,6 +1,7 @@
 # rocketmqhttpclient
+**a HTTP client for [rocketMQ](https://github.com/apache/incubator-rocketmq "RocketMQ is a low latency, reliable, scalable, easy to use message oriented middleware born from alibaba massive messaging business.").**
 
-  Provide a HTTP mode to communicate with [rocketMQ](https://github.com/alibaba/RocketMQ "from alibaba").
+  
   
   use [dropwizard](https://github.com/dropwizard/dropwizard "Dropwizard is a sneaky way of making fast Java web applications.") to process
   http request.
