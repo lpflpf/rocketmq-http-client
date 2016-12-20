@@ -10,6 +10,5 @@
 
 
 ## Acknowledgments
------------
   use [dropwizard](https://github.com/dropwizard/dropwizard "Dropwizard is a sneaky way of making fast Java web applications.") to process
   http request.
