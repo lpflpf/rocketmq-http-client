@@ -1,5 +1,5 @@
 
-serverName: 10.255.209.167:9876
+serverName: 127.0.0.1:9876
 
 server:
   applicationConnectors:
