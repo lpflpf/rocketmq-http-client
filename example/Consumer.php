@@ -39,7 +39,7 @@ class Consumer
     }
 }
 
-$consumer = new Consumer("dropw", "ITEM_BASE", "podRelationship", "podRelationShipSyncJob");
+$consumer = new Consumer("http://your.hostname/message", "topic", "tag", "consumer_id");
 $consumer->do(function($message){
     if (!empty($message)){
         echo "bornTime:" . $message['bornTime'] . "\n"

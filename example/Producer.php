@@ -47,9 +47,5 @@ class Producer{
     }
 }
 
-$producer = new Producer("http://192.168.96.11/message", "ITEM_BASE", "podRelationship", "podRelationshipSyncJob");
-$producer->send(json_encode([
-    "masterId" => 410257381,
-    "slaveId" => 24160602,
-    "isDelete" => 0
-]));
+$producer = new Producer("http://your.hostname/message", "topic", "tag", "producerId");
+$producer->send(json_encode(["hello world"]));

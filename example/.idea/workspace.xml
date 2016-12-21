@@ -36,21 +36,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Consumer.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Consumer.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Consumer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="41" column="31" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="31" />
+            <state relative-caret-position="1107">
+              <caret line="41" column="74" selection-start-line="41" selection-start-column="74" selection-end-line="41" selection-end-column="74" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Producer.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Producer.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Producer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1134">
-              <caret line="42" column="46" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
+            <state relative-caret-position="530">
+              <caret line="49" column="72" selection-start-line="49" selection-start-column="57" selection-end-line="49" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -71,8 +71,8 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/util.php" />
-        <option value="$PROJECT_DIR$/Consumer.php" />
         <option value="$PROJECT_DIR$/Producer.php" />
+        <option value="$PROJECT_DIR$/Consumer.php" />
       </list>
     </option>
   </component>
@@ -227,12 +227,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1482236466594</updated>
-      <workItem from="1482236468113" duration="5103000" />
+      <workItem from="1482236468113" duration="5305000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5103000" />
+    <option name="totallyTimeSpent" value="5305000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1592" y="-28" width="1616" height="916" extended-state="6" />
@@ -299,18 +299,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Consumer.php">
+    <entry file="file://$PROJECT_DIR$/Producer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="41" column="31" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="31" />
+        <state relative-caret-position="530">
+          <caret line="49" column="72" selection-start-line="49" selection-start-column="57" selection-end-line="49" selection-end-column="72" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Producer.php">
+    <entry file="file://$PROJECT_DIR$/Consumer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1134">
-          <caret line="42" column="46" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
+        <state relative-caret-position="1107">
+          <caret line="41" column="74" selection-start-line="41" selection-start-column="74" selection-end-line="41" selection-end-column="74" />
           <folding />
         </state>
       </provider>
